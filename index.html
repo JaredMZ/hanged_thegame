@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/button-style.css">
+        <link rel="stylesheet" href="css/footer-style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>HANGED</title>
+        <link rel="icon" href="resources/img/flaticon.png">
+
+        <audio src="resources/sound/bg_sound.mp3" type="audio/mp3" autoplay loop>No Support</audio>
+    </head>
+
+    <body>
+        <header>
+            <div id="top-bar">
+                <img id="logo-img" src="resources/img/logo.svg" alt="logo">
+
+                <h1 id="title">HANGED</h1>
+            </div>
+        </header>
+
+        <div id="main-menu" class="container">
+            <a class="buttons draw-btn main-menu-btn" id="start-btn" href="#game-dashboard">Iniciar juego</a>
+            <button class="buttons draw-btn main-menu-btn" id="addword-btn">Agregar palabra</button>
+        </div>
+
+        <div id="addword-menu"  class="container">
+            <input required type="text" name="main-word" id="add-word" placeholder="Ingrese una palabra" maxlength="8" >
+
+            <h3>Max. 8 letras</h3>
+            <button class="buttons raise btn" id="save-btn"> <a href="#game-dashboard"> Guardar y empezar</a></button>
+            <button class="buttons raise btn" id="cancel-btn">Cancelar</button>
+        </div>
+
+        <div id="game-dashboard"  class="container">
+            <div id="draw-area">
+               <!--<img id="base-img" src="resources/base_draw.png" alt="">-->
+               <canvas id="canvas"></canvas>
+            </div>
+            <div id="used-letters"></div>
+            <div id="letter-area"></div>
+
+            <div id="message-area">
+                <h1 id="message"></h1>
+            </div>
+            
+
+            <button class="buttons raise btn" id="new-game">Nuevo juego</button>
+            <button class="buttons raise btn" id="exit-btn">Desistir</button>
+        </div>
+
+
+        
+        <script src="scrypt.js"></script>
+
+        <footer id="footer">
+            <ul class="wrapper">
+                <li class="icon facebook">
+                  <span class="tooltip">Facebook</span>
+                  <a target="_blank"><i class='bx bxl-facebook'></i></a>
+                </li>
+                <li class="icon twitter">
+                  <span class="tooltip">Twitter</span>
+                  <a target="_blank"><i class="bx bxl-twitter"></i></a>
+                </li>
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <a target="_blank"><i class="bx bxl-instagram"></i></a>
+                </li>
+                <li class="icon github">
+                  <span class="tooltip">Github</span>
+                  <a href="https://github.com/JaredMZ" target="_blank"><i class="bx bxl-github"></i></a>
+                </li>
+                <li class="icon youtube">
+                  <span class="tooltip">Youtube</span>
+                  <a href="https://www.youtube.com/" target="_blank"><i class="bx bxl-youtube"></i></a>
+                </li>
+              </ul>
+        </footer>
+    </body>
+    
+    
+
+</html>
